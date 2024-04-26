@@ -7,7 +7,7 @@ void toUpperCase(char* str) {
         str[i] = toupper(str[i]);
     }
 }
-
+#Fungsi mencari kata horizontal
 bool horizontal(const char* word, char matrix[][24], int wordLen) {
     for (int i = 0; i < 24; ++i) {
         for (int j = 0; j <= 24 - wordLen; ++j) {
@@ -23,7 +23,7 @@ bool horizontal(const char* word, char matrix[][24], int wordLen) {
     }
     return false;
 }
-
+#Fungsi mencari kata vertikal
 bool vertical(const char* word, char matrix[][24], int wordLen) {
     for (int i = 0; i <= 24 - wordLen; ++i) {
         for (int j = 0; j < 24; ++j) {
@@ -39,7 +39,7 @@ bool vertical(const char* word, char matrix[][24], int wordLen) {
     }
     return false;
 }
-
+#Fungsi mencari kata diagonal
 bool diagonal(const char* word, char matrix[][24], int wordLen) {
     for (int i = 0; i < 24; ++i) {
         for (int j = 0; j < 24; ++j) {
