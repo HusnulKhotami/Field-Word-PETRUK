@@ -21,5 +21,5 @@ bool horizontal(const char* word, char matrix[][24], int wordLen) {
             if (found) return true;
         } 
     }
-    return false;
+    return true;
 }
